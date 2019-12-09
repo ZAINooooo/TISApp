@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Sampleee</string>
+
+
+    <string name="edittext_hint">Enter Customer Info</string>
+
+    <string name="app_tag_line">"Time Information System"</string>
+
+    <string name="app_version_name">Version 1.0</string>
+
+    <string name="sign_in_to_witty_manager">Sign in to Witty Manager</string>
+
+
+    <string name="dont_have_an_account">Dont have an account?</string>
+    <string name="link_sign_up_now"><u>Sign Up</u></string>
+
+
+    <string name="prompt_username_or_email">Username / Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="org_name">What is your org domain?</string>
+    <string name="title_activity_home__screen">Home_Screen</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_photos">Photos</string>
+    <string name="nav_movies">Movies</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about_us">About Us</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Photos</item>
+        <item>Movies</item>
+        <item>Notifications</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="assets_fonts_folder">j</string>
+    <string name="fragment_headers">%1$s</string>
+    <string name="title_activity_manual_entry_module">ManualEntryModule</string>
+    <string name="title_activity_leave_module">LeaveModule</string>
+    <string name="permission_rationale">Please grant location permission to start the service</string>
+    <string name="permission_denied_explanation">Permission Denied</string>
+    <string name="settings">Settings</string>
+
+
+</resources>

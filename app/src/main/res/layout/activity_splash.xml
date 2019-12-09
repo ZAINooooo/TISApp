@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    
+    android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip" 
+        android:layout_weight="0.6">
+        
+        
+        <ImageView android:id="@+id/imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/time"
+            android:layout_centerInParent="true" />
+        
+<!--<TextView-->
+
+            <!--android:gravity="center_horizontal"-->
+            <!--android:padding="29dp"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/app_tag_line"-->
+            <!--android:shadowColor="#FFFFFF"-->
+            <!--android:shadowDx="1"-->
+            <!--android:shadowDy="1"-->
+            <!--android:shadowRadius="2"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textStyle="bold|normal"-->
+            <!--android:layout_below="@id/imgLogo"-->
+            <!--android:fontFamily="@font/montserrat_light" />-->
+
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip" 
+        android:layout_weight="0.4">
+        
+        
+        <com.example.tisapp.MultiWaveHeader
+            android:id="@+id/waveHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="170dp" 
+            android:layout_alignParentBottom="true"
+            android:scaleY="-1.0" 
+            app:mwhCloseColor="#9400D3"
+            app:mwhGradientAngle="45" 
+            app:mwhStartColor="@color/colorPrimaryDark"
+            app:mwhVelocity="3.0" app:mwhWaves="MultiWave" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_margin="25.0dip"
+            android:max="100"
+            android:progress="1"
+            android:indeterminate="false" 
+            android:minWidth="150.0dip"
+            android:minHeight="40.0dip"
+            android:layout_above="@+id/textVersion"
+            android:layout_centerHorizontal="true" 
+            style="?android:progressBarStyleHorizontal" />
+        
+        <TextView 
+
+
+            android:gravity="center_horizontal" 
+            android:id="@+id/textVersion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="21dp" 
+            android:text="@string/app_version_name"
+
+
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold|normal"
+
+            android:layout_alignParentBottom="true" 
+            android:fontFamily="@font/montserrat_ultra_light" />
+    </RelativeLayout>
+</LinearLayout>

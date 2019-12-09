@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="80dp" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<RelativeLayout android:id="@+id/main_backdrop" android:background="@color/colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="250dp" />-->
+
+
+    <LinearLayout
+        android:id="@+id/swipeRefreshMonthlyReportLayout"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <RelativeLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!--<include-->
+            <!--android:id="@+id/layoutEmployeeDetails"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:layout_marginBottom="52dp"-->
+            <!--android:layout_marginStart="18dp"-->
+            <!--android:layout_marginEnd="18dp"-->
+            <!--layout="@layout/layout_employee_details_as_header_template_2" />-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/layoutMonthlyReportContent"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/swipe_refresh_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewReport"
+                    android:layout_width="fill_parent"
+                    android:scrollbars="vertical"
+                    android:layout_height="fill_parent" />
+
+                </android.support.v4.widget.SwipeRefreshLayout>
+
+            </LinearLayout>
+
+
+            <com.rey.material.widget.ProgressView
+                android:id="@+id/circular_progress"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                app:pv_autostart="true"
+                android:layout_centerInParent="true"
+                app:pv_circular="true"
+                android:visibility="gone"
+                app:pv_progressMode="indeterminate"
+                app:pv_progressStyle="@style/Material.Drawable.CircularProgress" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/layNoInternet"
+                android:layout_centerInParent="true"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@mipmap/nointernet" />-->
+
+                <TextView android:layout_width="wrap_content"
+                    android:id="@+id/no_data_found"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:text="No Data Found" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

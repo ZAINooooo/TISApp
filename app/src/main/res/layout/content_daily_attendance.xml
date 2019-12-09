@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/main_backdrop"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp" />
+
+    <LinearLayout android:id="@+id/swipeRefreshMonthlyReportLayout"
+        android:fitsSystemWindows="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?android:actionBarSize"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <!--<include android:id="@+id/layoutEmployeeDetails" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_marginStart="18dp" android:layout_marginEnd="18dp" layout="@layout/layout_employee_details_as_header_template_2" />-->
+            <!--<include android:id="@+id/layoutSelectDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:layout_below="@id/layoutEmployeeDetails" android:layout_centerHorizontal="true" android:layout_marginStart="12dp" android:layout_marginEnd="12dp" layout="@layout/layout_horizontal_select_date" />-->
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/layoutSelectDate"
+                android:padding="8dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/input_date"
+                    android:layout_width="113dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/montserrat_light"
+                    android:hint="Select Date:"
+                    android:textColor="@color/white"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+
+
+            <Button
+                android:textSize="14dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/singupbtn"
+                android:background="@drawable/button_selector_gradient_main2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@id/layoutSelectDate"
+                android:textAllCaps="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat_regular" />
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@id/layNoInternet"
+                android:padding="20dp"
+
+               android:layout_below="@id/singupbtn"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/nointernet" />
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:text="No Data Found" />
+
+
+            </LinearLayout>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/singupbtn"
+               android:layout_marginTop="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true">
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/layoutMonthlyReportContent"
+                    android:layout_width="fill_parent"
+
+                    android:layout_height="fill_parent">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:id="@+id/daily_attendance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/helvetica_neue_lt_pro_roman"
+                                android:gravity="center"
+                                android:paddingBottom="10dp"
+                                android:shadowColor="#00ccff"
+
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="Daily Attendance Report"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:id="@+id/time_in_is"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.5"
+                                            android:fontFamily="@font/helvetica_neue_lt_pro_roman"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:shadowColor="#00ccff"
+                                            android:shadowDx="1"
+                                            android:shadowDy="1"
+                                            android:shadowRadius="2"
+                                            android:text="12:00"
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold"
+                                            android:typeface="serif" />
+
+                                        <TextView
+                                            android:id="@+id/status_out"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.5"
+                                            android:fontFamily="@font/helvetica_neue_lt_pro_roman"
+                                            android:gravity="center"
+                                            android:shadowColor="#00ccff"
+                                            android:shadowDx="1"
+                                            android:shadowDy="1"
+                                            android:shadowRadius="2"
+                                            android:text="Time In"
+                                            android:textColor="#ffffff"
+                                            android:textSize="10sp"
+                                            android:typeface="serif" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:id="@+id/date_in_is"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.5"
+                                            android:fontFamily="@font/helvetica_neue_lt_pro_roman"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:shadowColor="#00ccff"
+                                            android:shadowDx="1"
+                                            android:shadowDy="1"
+                                            android:shadowRadius="2"
+                                            android:text="01-Apr-19"
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold"
+                                            android:typeface="serif" />
+
+                                        <TextView
+
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.5"
+                                            android:fontFamily="@font/helvetica_neue_lt_pro_roman"
+                                            android:gravity="center"
+                                            android:shadowColor="#00ccff"
+                                            android:shadowDx="1"
+                                            android:shadowDy="1"
+                                            android:shadowRadius="2"
+                                            android:text="Date In"
+                                            android:textColor="#ffffff"
+                                            android:textSize="10sp"
+                                            android:typeface="serif" />
+                                    </LinearLayout>
+
+
+
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+
+                                            android:id="@+id/time_out_is"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.5"
+                                            android:fontFamily="@font/helvetica_neue_lt_pro_roman"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:shadowColor="#00ccff"
+                                            android:shadowDx="1"
+                                            android:shadowDy="1"
+                                            android:shadowRadius="2"
+                                            android:text="12:00"
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold"
+                                            android:typeface="serif" />
+
+                                        <TextView
+
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.5"
+                                            android:fontFamily="@font/helvetica_neue_lt_pro_roman"
+                                            android:gravity="center"
+                                            android:shadowColor="#00ccff"
+                                            android:shadowDx="1"
+                                            android:shadowDy="1"
+                                            android:shadowRadius="2"
+                                            android:text="Time Out"
+                                            android:textColor="#ffffff"
+                                            android:textSize="10sp"
+                                            android:typeface="serif" />
+                                    </LinearLayout>
+
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:id="@+id/date_out_is"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.5"
+                                            android:fontFamily="@font/helvetica_neue_lt_pro_roman"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:shadowColor="#00ccff"
+                                            android:shadowDx="1"
+                                            android:shadowDy="1"
+                                            android:shadowRadius="2"
+                                            android:text="01-Apr-19"
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold"
+                                            android:typeface="serif" />
+
+                                        <TextView
+
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.5"
+                                            android:fontFamily="@font/helvetica_neue_lt_pro_roman"
+                                            android:gravity="center"
+                                            android:shadowColor="#00ccff"
+                                            android:shadowDx="1"
+                                            android:shadowDy="1"
+                                            android:shadowRadius="2"
+                                            android:text="Date Out"
+                                            android:textColor="#ffffff"
+                                            android:textSize="10sp"
+                                            android:typeface="serif" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="3.0dip"
+                                android:background="@color/white" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal"
+                                android:padding="3dp">
+
+
+                                <TextView
+                                    android:id="@+id/shift_timing"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textAlignment="center"
+                                    android:text="8:30-17:00"
+                                    android:textColor="#ffffff"
+                                    android:layout_weight="0.5"
+                                    android:textStyle="bold"
+                                    android:typeface="serif"
+                                    android:fontFamily="@font/helvetica_neue_lt_pro_roman"
+                                    android:textSize="12sp" />
+
+
+                            </LinearLayout>
+
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:elevation="2dp">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_container1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="@dimen/_6sdp"
+                                    android:paddingBottom="@dimen/_6sdp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:id="@+id/work_hours"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.5"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:fontFamily="@font/helvetica_neue_lt_pro_roman"
+                                            android:text="12:00"
+                                            android:textColor="#000000"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold"
+                                            android:typeface="serif" />
+
+                                        <TextView
+                                            android:id="@+id/status_out1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.5"
+                                            android:fontFamily="@font/helvetica_neue_lt_pro_roman"
+                                            android:gravity="center"
+                                            android:shadowColor="#00ccff"
+                                            android:shadowDx="1"
+                                            android:shadowDy="1"
+                                            android:shadowRadius="2"
+                                            android:text="Work Hours"
+                                            android:textColor="#000000"
+                                            android:textSize="10sp"
+                                            android:typeface="serif" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:id="@+id/status_is"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.5"
+                                            android:fontFamily="@font/helvetica_neue_lt_pro_roman"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="12:00"
+                                            android:textColor="#000000"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold"
+                                            android:typeface="serif" />
+
+                                        <TextView
+                                            android:id="@+id/status_out2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.5"
+                                            android:fontFamily="@font/helvetica_neue_lt_pro_roman"
+                                            android:gravity="center"
+                                            android:shadowColor="#00ccff"
+                                            android:shadowDx="1"
+                                            android:shadowDy="1"
+                                            android:shadowRadius="2"
+                                            android:text="Shift"
+                                            android:textColor="#000000"
+                                            android:textSize="10sp"
+                                            android:typeface="serif" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:id="@+id/remarks"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.5"
+                                            android:fontFamily="@font/helvetica_neue_lt_pro_roman"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="12:00"
+                                            android:textColor="@color/yello"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold"
+                                            android:typeface="serif" />
+
+                                        <TextView
+                                            android:id="@+id/status_out3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.5"
+                                            android:fontFamily="@font/helvetica_neue_lt_pro_roman"
+                                            android:gravity="center"
+                                            android:shadowColor="#00ccff"
+                                            android:shadowDx="1"
+                                            android:shadowDy="1"
+                                            android:shadowRadius="2"
+                                            android:text="Remarks"
+                                            android:textColor="#000000"
+                                            android:textSize="10sp"
+                                            android:typeface="serif" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+
+
+                            <Button
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:id="@+id/singupbtn2"
+                                android:background="@drawable/button_selector_gradient_main2"
+                                android:layout_width="150dp"
+                                android:layout_gravity="center"
+                                android:visibility="gone"
+                                android:layout_height="wrap_content"
+                                android:text="Manual Enter"
+                                android:layout_below="@id/layoutSelectDate"
+                                android:textAllCaps="true"
+                                android:fontFamily="@font/montserrat_regular" />
+
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

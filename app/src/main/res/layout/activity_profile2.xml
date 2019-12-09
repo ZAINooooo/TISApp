@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical"
+
+    n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <!--<include layout="@layout/layout_tabs2" />-->
+    <ScrollView
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+
+        <FrameLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent">
+
+            <ImageView
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:scaleType="fitXY"
+                n1:src="@mipmap/bg_profilescreen" />
+
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="match_parent"
+                n1:orientation="vertical"
+                n1:padding="20.0dip">
+
+
+                <LinearLayout
+                    n1:layout_width="match_parent"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginBottom="20dp"
+                    n1:gravity="center_vertical"
+                    n1:orientation="horizontal">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView xmlns:n2="http://schemas.android.com/apk/res-auto"
+                        n1:id="@+id/ivUserProfile"
+                        n1:layout_width="90.0dip"
+                        n1:layout_height="80.0dip"
+                        n1:src="@mipmap/image_face"
+                        n2:civ_border="true"
+                        n2:civ_border_color="#ffffffff"
+                        n2:civ_border_width="1.0dip"
+                        n2:civ_shadow="true"
+                        n2:civ_shadow_color="@android:color/darker_gray"
+                        n2:civ_shadow_radius="0.0" />
+
+
+                    <LinearLayout
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content"
+                        n1:layout_gravity="center"
+                        n1:gravity="right"
+                        n1:orientation="vertical"
+                        n1:paddingLeft="10.0dip">
+
+
+                        <Button
+                            n1:id="@+id/btnEditPassword"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:background="@drawable/button_selector_gradient_main"
+                            n1:fontFamily="@font/montserrat_regular"
+                            n1:layout_marginEnd="3dp"
+                            n1:paddingLeft="10dp"
+                            n1:paddingRight="10dp"
+                            n1:text="Edit Password"
+                            n1:textAppearance="?android:textAppearanceSmall"
+                            n1:textColor="#ffffffff"
+                            n1:textStyle="normal" />
+
+                        <LinearLayout
+                            n1:layout_width="match_parent"
+                            n1:layout_height="wrap_content"
+                            n1:layout_gravity="center"
+                            n1:orientation="vertical">
+
+                            <TextView
+                                n1:id="@+id/tvUserNameProfile"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:text="Zain Kalim"
+                                n1:textAppearance="?android:textAppearanceMedium"
+                                n1:textStyle="bold" />
+
+                            <TextView
+                                n1:id="@+id/tvDesigProfile"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:text="Android Developer"
+                                n1:textAppearance="?android:textAppearanceSmall" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    n1:layout_width="match_parent"
+                    n1:layout_height="wrap_content"
+                    n1:orientation="vertical">
+
+
+                    <TextView
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginTop="20.0dip"
+                        n1:fontFamily="@font/montserrat_ultra_light"
+                        n1:shadowColor="#00ccff"
+                        n1:shadowDx="1"
+                        n1:shadowDy="1"
+                        n1:shadowRadius="2"
+                        n1:text="Employee Information"
+                        n1:textColor="@color/colorPrimaryDark"
+                        n1:textSize="18sp"
+                        n1:textStyle="bold" />
+
+
+                    <View
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="6.0px"
+                        n1:layout_marginTop="3.0dip"
+                        n1:layout_marginBottom="10dp"
+                        n1:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginBottom="10dp"
+                        n1:orientation="horizontal">
+
+                        <LinearLayout
+                            n1:layout_width="fill_parent"
+                            n1:layout_height="wrap_content"
+                            n1:layout_weight="1.0"
+                            n1:orientation="vertical">
+
+                            <TextView
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:layout_marginBottom="5dp"
+                                n1:text="Name"
+                                n1:textStyle="bold" />
+
+                            <TextView
+                                n1:id="@+id/tvUserEmailProfile"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:text="jbl.cat@yahoo.com" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginTop="5.0dip"
+                        n1:layout_marginBottom="10dp"
+                        n1:orientation="horizontal">
+
+                        <LinearLayout
+                            n1:layout_width="fill_parent"
+                            n1:layout_height="wrap_content"
+                            n1:layout_weight="1.0"
+                            n1:orientation="vertical">
+
+                            <TextView
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:layout_marginBottom="5dp"
+                                n1:text="Department"
+                                n1:textStyle="bold" />
+
+                            <TextView
+                                n1:id="@+id/tvUserSkypePr"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:text="Software" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginTop="5.0dip"
+                        n1:layout_marginBottom="10dp"
+                        n1:orientation="horizontal">
+
+                        <LinearLayout
+                            n1:layout_width="fill_parent"
+                            n1:layout_height="wrap_content"
+                            n1:layout_weight="1.0"
+                            n1:orientation="vertical">
+
+                            <TextView
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:layout_marginBottom="5dp"
+                                n1:text="Employee Number"
+                                n1:textStyle="bold" />
+
+                            <TextView
+                                n1:id="@+id/tvUserContactProofilefile"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:text="\ 03332644566" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginTop="5.0dip"
+                        n1:layout_marginBottom="10dp"
+                        n1:orientation="horizontal">
+
+                        <LinearLayout
+                            n1:layout_width="fill_parent"
+                            n1:layout_height="wrap_content"
+                            n1:layout_weight="1.0"
+                            n1:orientation="vertical">
+
+                            <TextView
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:layout_marginBottom="5dp"
+                                n1:text="Designation"
+                                n1:textStyle="bold" />
+
+                            <TextView
+                                n1:id="@+id/tvUsernameProfile"
+                                n1:layout_width="wrap_content"
+                                n1:layout_height="wrap_content"
+                                n1:text="Software Department" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginTop="5.0dip"
+                        n1:orientation="horizontal">
+                        <!--<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_weight="1.0">-->
+                        <!--<TextView n1:textStyle="bold" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Company" />-->
+                        <!--<TextView n1:id="@+id/tvUserCompanyProfile" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="" />-->
+                        <!--</LinearLayout>-->
+                    </LinearLayout>
+
+                    <Button
+                        n1:id="@+id/btnLogout"
+                        style="?android:borderlessButtonStyle"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginLeft="20.0dip"
+                        n1:layout_marginTop="30.0dip"
+                        n1:layout_marginRight="20.0dip"
+                        n1:background="@drawable/button_selector_gradient_main"
+                        n1:fontFamily="@font/montserrat_regular"
+                        n1:text="Logout"
+                        n1:textAppearance="?android:textAppearanceMedium"
+                        n1:textColor="#ffffffff"
+                        n1:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

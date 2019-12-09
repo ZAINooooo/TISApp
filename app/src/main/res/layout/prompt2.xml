@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_root"
+    android:background="#d3d3d3"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+
+            <EditText
+                android:id="@+id/ed_employee_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_below="@+id/tvPassword"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:shadowColor="#00ccff"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:typeface="serif"
+                android:hint="Enter IMEI Number"
+                android:textColor="@android:color/black"
+                android:textColorHint="#000000" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:orientation="horizontal" >-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/ImageView04"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@mipmap/username" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/ed_token"-->
+        <!--android:layout_width="286dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_below="@+id/tvPassword"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Enter Token"-->
+        <!--android:inputType="number"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:textColorHint="#000000" />-->
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--<Button-->
+                <!--android:id="@+id/btnCancel"-->
+                <!--android:layout_width="126dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/colorPrimary"-->
+                <!--android:text="Cancel"-->
+
+                <!--android:textColor="#ffff"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textStyle="bold" />-->
+
+
+    <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button"
+                android:fontFamily="serif"
+                android:text="Cancel"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button"
+                android:fontFamily="serif"
+                android:text="OK"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+        </LinearLayout>
+    </LinearLayout>
+

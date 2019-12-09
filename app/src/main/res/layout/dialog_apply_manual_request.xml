@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--android:background="@drawable/bg_login"-->
+
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#3524b6"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Manual Entry"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:src="@mipmap/leftarrow" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <!--<TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:background="@color/app_orange" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Apply for leave" />-->
+
+
+
+
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="15.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:textStyle="bold"
+                        android:text="Attendance Date" />
+
+                    <Button
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:id="@+id/input_date11"
+                        android:background="@drawable/cust_border_grey_et"
+                        android:padding="10.0dip"
+                        android:textStyle="bold"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:drawableLeft="@mipmap/calendar_history_screen"
+                        style="?android:borderlessButtonStyle" />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="15.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:textStyle="bold"
+                        android:text="Date In" />
+
+                    <Button
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:id="@+id/input_date1"
+                        android:background="@drawable/cust_border_grey_et"
+                        android:padding="10.0dip"
+                        android:textStyle="bold"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        
+                        android:drawableLeft="@mipmap/calendar_history_screen"
+                        style="?android:borderlessButtonStyle" />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="15.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:textStyle="bold"
+                        android:text="Time In" />
+
+                    <Button
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:id="@+id/input_date3"
+                        android:background="@drawable/cust_border_grey_et"
+                        android:padding="10.0dip"
+                        android:textStyle="bold"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="11:50"
+                        android:drawableLeft="@mipmap/calendar_history_screen"
+                        style="?android:borderlessButtonStyle" />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="35.0dip"-->
+            <!--android:textStyle="bold"-->
+            <!--android:text="Select Type" />-->
+
+            <!--<Spinner-->
+            <!--android:id="@+id/spLeaveSubject2"-->
+            <!--android:background="@drawable/spinner_bg"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="50.0dip"-->
+            <!--android:layout_marginLeft="30.0dip"-->
+            <!--android:layout_marginTop="10.0dip"-->
+            <!--android:layout_marginRight="30.0dip" />-->
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35.0dip"
+                android:textStyle="bold"
+                android:text="Enter Customer Info" />
+
+            <EditText
+
+                android:id="@+id/customer_info"
+                android:background="@drawable/cust_border_white_radius_10_withborder"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginRight="30.0dip" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="35.0dip"-->
+            <!--android:textStyle="bold"-->
+            <!--android:text="No Of Days" />-->
+
+            <!--<EditText-->
+            <!--android:gravity="top"-->
+            <!--android:id="@+id/etLeaveReason3"-->
+            <!--android:background="@drawable/cust_border_white_radius_10_withborder"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="30.0dip"-->
+            <!--android:layout_marginTop="10.0dip"-->
+            <!--android:layout_marginRight="30.0dip"-->
+            <!--android:minLines="2" android:imeOptions="actionDone" />-->
+
+
+            <!--<Spinner-->
+            <!--android:id="@+id/spLeaveSubject"-->
+            <!--android:background="@drawable/spinner_bg"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="50.0dip"-->
+            <!--android:layout_marginLeft="30.0dip"-->
+            <!--android:layout_marginTop="10.0dip"-->
+            <!--android:layout_marginRight="30.0dip" />-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35.0dip"
+                android:layout_marginTop="15.0dip"
+                android:textStyle="bold"
+                android:text="Reason" />
+
+            <EditText
+                android:gravity="top"
+                android:id="@+id/reason"
+                android:background="@drawable/cust_border_white_radius_10_withborder"
+                android:padding="10.0dip" android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginRight="30.0dip"
+
+                android:hint="Please type a short  reason"
+                android:minLines="5" android:imeOptions="actionDone" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="15.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:textStyle="bold"
+                        android:text="Date Out" />
+
+                    <Button
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:id="@+id/input_date2"
+                        android:background="@drawable/cust_border_grey_et"
+                        android:padding="10.0dip"
+                        android:textStyle="bold"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        
+                        android:drawableLeft="@mipmap/calendar_history_screen"
+                        style="?android:borderlessButtonStyle" />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="15.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:textStyle="bold"
+                        android:text="Time Out" />
+
+                    <Button
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:id="@+id/input_date4"
+                        android:background="@drawable/cust_border_grey_et"
+                        android:padding="10.0dip"
+                        android:textStyle="bold"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="11:50"
+                        android:drawableLeft="@mipmap/calendar_history_screen"
+                        style="?android:borderlessButtonStyle" />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+
+            <!--android:layout_marginBottom="20sp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<android.support.v7.widget.AppCompatCheckBox-->
+            <!--android:theme="@style/CustomCheckBox"-->
+            <!--android:id="@+id/checkBoxTimeCard2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_toLeftOf="@id/checkBoxTimeCard2"-->
+            <!--android:text="Half Day "-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+            <!--&lt;!&ndash;<CheckBox&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/cbx_serveform_selectionbox"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:padding="13dip"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Full Day" />&ndash;&gt;-->
+
+
+            <!--<android.support.v7.widget.AppCompatCheckBox-->
+            <!--android:theme="@style/CustomCheckBox"-->
+            <!--android:id="@+id/checkBoxTimeCard"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_toRightOf="@id/checkBoxTimeCard2"-->
+            <!--android:text="Full Day"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <!--</RelativeLayout>-->
+
+
+            <com.rey.material.widget.ProgressView
+                android:id="@+id/circular_progress"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                app:pv_autostart="true"
+                android:visibility="gone"
+                app:pv_circular="true"
+                app:pv_progressMode="indeterminate"
+                app:pv_progressStyle="@style/Material.Drawable.CircularProgress" />
+
+            <Button
+                android:id="@+id/form_button"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginTop="15.0dip"
+                android:layout_marginRight="30.0dip"
+                android:layout_marginBottom="50.0dip"
+                android:background="@drawable/button_selector_gradient_main"
+
+
+                android:text="Submit"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/main_backdrop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorPrimaryDark">
+
+        <!--<include android:id="@+id/layoutEmployeeDetails"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="18dp"-->
+            <!--android:layout_marginEnd="18dp"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--layout="@layout/layout_employee_details_as_header_template_2" />-->
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/gps">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_toEndOf="@id/aa"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="From"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/input_date"
+                    style="?android:borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cust_border_grey_et"
+                    android:drawableLeft="@mipmap/calendar_history_screen"
+                    android:gravity="center"
+                    android:hint="2017-05-31"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/aa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="To"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/input_date2"
+                    style="?android:borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cust_border_grey_et"
+                    android:drawableLeft="@mipmap/calendar_history_screen"
+                    android:gravity="center"
+                    android:hint="2017-05-31"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+        <Button
+            android:textSize="14dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/form_button"
+            android:background="@drawable/background_gradient_round_border2"
+            android:layout_width="150dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/gps"
+            android:textAllCaps="true"
+            android:fontFamily="@font/montserrat_regular" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/swipeRefreshMonthlyReportLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:padding="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@id/aa"
+            app:cardCornerRadius="5dp"
+            app:cardPreventCornerOverlap="true">
+
+            <LinearLayout
+                android:id="@+id/layoutMonthlyReportContent"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_listview_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/layNoInternet"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/nointernet" />
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:text="No Data Found" />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>

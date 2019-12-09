@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#3524b6"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Leave Form"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:src="@mipmap/leftarrow" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rellay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_header_background">
+
+
+
+
+
+        <!--<TextClock-->
+        <!--android:id="@+id/textClock"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/imgUser"-->
+        <!--android:layout_marginTop="15sp"-->
+        <!--android:fontFamily="sans-serif-light"-->
+        <!--android:textColor="@color/colorPrimaryDark"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textSize="25sp"-->
+        <!--android:text="9:45:00 Pm"-->
+        <!--android:textStyle="bold"-->
+        <!--tools:targetApi="jelly_bean_mr1" />-->
+
+
+
+
+        <LinearLayout
+            android:id="@+id/layCurrentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10.0dip"
+            android:orientation="horizontal">
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvTodayTime"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="52sp"-->
+                <!--android:shadowColor="#00ccff"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:textAlignment="center"-->
+                <!--android:shadowDx="1"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:shadowDy="1"-->
+                <!--android:shadowRadius="2"-->
+                <!--android:text="09:00"-->
+                <!--android:textAppearance="?android:textAppearanceLarge"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="25sp"-->
+                <!--android:textStyle="bold" />-->
+
+
+            <TextClock
+                android:id="@+id/textClock"
+                android:layout_width="wrap_content"
+                android:layout_height="52sp"
+                android:shadowColor="#00ccff"
+                android:layout_marginTop="5dp"
+                android:format12Hour="dd-MMM-yyyy, hh:mm a"
+                android:textAlignment="center"
+                android:shadowDx="1"
+
+                android:shadowDy="1"
+                android:layout_gravity="center_vertical"
+                android:shadowRadius="2"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#FFFFFF"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+
+
+
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvTodayTimeAMPM"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="4.0dip"-->
+                <!--android:text="AM"-->
+                <!--android:textAppearance="?android:textAppearanceLarge"-->
+                <!--android:textColor="@color/yello"-->
+                <!--android:textSize="13.0sp"-->
+                <!--android:textStyle="bold" />-->
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    
+    
+    
+    
+    
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10sp"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <!--<TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:background="@color/app_orange" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Apply for leave" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35.0dip"
+                android:textStyle="bold"
+                android:text="Select Type" />
+
+            <Spinner
+                android:id="@+id/spLeaveSubject2"
+                android:background="@drawable/spinner_bg"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginRight="30.0dip" />
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:theme="@style/CustomCheckBox"
+                    android:id="@+id/cbx_serveform_selectionbox2"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Half Day "
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+
+
+                <!--<CheckBox-->
+                <!--android:id="@+id/cbx_serveform_selectionbox"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:padding="13dip"-->
+                <!--android:text="Full Day" />-->
+
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:theme="@style/CustomCheckBox"
+                    android:id="@+id/cbx_serveform_selectionbox"
+                    android:layout_width="wrap_content"
+                    android:text="Full Day"
+                    android:layout_toLeftOf="@id/cbx_serveform_selectionbox2"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35.0dip"-->
+                <!--android:textStyle="bold"-->
+                <!--android:text="Apply Date" />-->
+
+            <!--<EditText-->
+
+                <!--android:id="@+id/etLeaveReason2"-->
+                <!--android:background="@drawable/cust_border_white_radius_10_withborder"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:text="ssssss"-->
+                <!--android:padding="10dp"-->
+                <!--android:textColor="#000000"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip" />-->
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="15.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:textStyle="bold"
+                        android:text="From" />
+
+                    <Button
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:id="@+id/from_date"
+                        android:background="@drawable/cust_border_grey_et"
+                        android:padding="10.0dip"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:drawableLeft="@mipmap/calendar_history_screen"
+                        style="?android:borderlessButtonStyle" />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="15.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:textStyle="bold"
+                        android:text="To" />
+
+                    <Button
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:id="@+id/to_date"
+                        android:background="@drawable/cust_border_grey_et"
+                        android:padding="10.0dip"
+                        android:textStyle="bold"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:drawableLeft="@mipmap/calendar_history_screen"
+                        style="?android:borderlessButtonStyle" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35.0dip"
+                android:textStyle="bold"
+                android:text="No Of Days" />
+
+
+
+
+            <EditText
+                android:id="@+id/days_leave"
+                android:background="@drawable/cust_border_white_radius_10_withborder"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginRight="30.0dip" />
+
+
+
+
+
+            <!--<Spinner-->
+                <!--android:id="@+id/spLeaveSubject"-->
+                <!--android:background="@drawable/spinner_bg"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="50.0dip"-->
+                <!--android:layout_marginLeft="30.0dip"-->
+                <!--android:layout_marginTop="10.0dip"-->
+                <!--android:layout_marginRight="30.0dip" />-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35.0dip"
+                android:layout_marginTop="15.0dip"
+                android:textStyle="bold"
+                android:text="Reason" />
+
+            <EditText
+                android:gravity="top"
+                android:id="@+id/input_date2"
+                android:background="@drawable/cust_border_white_radius_10_withborder"
+                android:padding="10.0dip" android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginRight="30.0dip"
+                android:layout_marginBottom="20dp"
+                android:hint="Please type a short  reason"
+                android:minLines="5" android:imeOptions="actionDone" />
+
+
+
+
+            <com.rey.material.widget.ProgressView
+                android:id="@+id/circular_progress"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                app:pv_autostart="true"
+                android:visibility="gone"
+                app:pv_circular="true"
+                app:pv_progressMode="indeterminate"
+                app:pv_progressStyle="@style/Material.Drawable.CircularProgress" />
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_marginBottom="20sp"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<android.support.v7.widget.AppCompatCheckBox-->
+                    <!--android:theme="@style/CustomCheckBox"-->
+                    <!--android:id="@+id/cbx_serveform_selectionbox2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:text="Half Day "-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+
+                <!--&lt;!&ndash;<CheckBox&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/cbx_serveform_selectionbox"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:padding="13dip"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="Full Day" />&ndash;&gt;-->
+
+
+                <!--<android.support.v7.widget.AppCompatCheckBox-->
+                    <!--android:theme="@style/CustomCheckBox"-->
+                    <!--android:id="@+id/cbx_serveform_selectionbox"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_toLeftOf="@id/cbx_serveform_selectionbox2"-->
+                    <!--android:text="Full Day"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+            <!--</RelativeLayout>-->
+
+
+            <Button
+                android:id="@+id/form_button"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginTop="50.0dip"
+                android:layout_marginRight="30.0dip"
+                android:layout_marginBottom="50.0dip"
+                android:background="@drawable/button_selector_gradient_main"
+                android:text="Submit"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>
